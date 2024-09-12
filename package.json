@@ -1,16 +1,22 @@
 {
-  "name": "kiwi-tequila-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "homepage": "https://tequila.kiwi.com/portal/docs/tequila_api",
+  "name": "@ohm-vision/kiwi-tequila-api",
+  "version": "1.3.3",
+  "description": "Unofficial wrapper for Kiwi (tequila) API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npx tsc --build",
+    "clean": "tsc --build --clean",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "kiwi",
+    "tequila",
+    "api"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ohm-vision/kiwi-tequila-api-js"
-  },
-  "scripts": {
-    "build": "npx tsc && cp package.json dist/package.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "url": "git+https://github.com/ohm-vision/kiwi-tequila-api.git"
   },
   "author": "",
   "license": "ISC",

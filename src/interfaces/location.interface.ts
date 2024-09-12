@@ -25,6 +25,8 @@ export interface Location extends Region {
     tags: Tag[];
     providers: number[];
     special: Region[];
+    subdivision?: Region;
+    country?: Region;
     tourist_region: Region[];
     car_rentals: CarRental[];
     new_ground: boolean;

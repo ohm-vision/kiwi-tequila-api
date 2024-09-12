@@ -34,6 +34,22 @@ export interface SearchFlightRoute extends Pick<SearchFlight, "cityFrom" | "city
         /**
          * the height of the hand luggage
          */
+        hand_height: number;
+        /**
+         * the length of the hand luggage
+         */
+        hand_length: number;
+        /**
+         * the weight of the hand luggage
+         */
+        hand_weight: number;
+        /**
+         * the width of the hand luggage
+         */
+        hand_width: number;
+        /**
+         * the height of the hand luggage
+         */
         personal_item_height: number;
         /**
          * the length of the hand luggage

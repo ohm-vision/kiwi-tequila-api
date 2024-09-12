@@ -123,7 +123,11 @@ export interface BookingSaveFlight extends Flight, Pick<BookingFlight, "bags_rec
     operating_airline: Pick<Airline, "iata" | "name">;
 }
 
-export interface SearchFlight extends Flight {
+export interface SearchFlight extends Omit<Flight, "combination_trip_id"> {
+    /**
+     * undocumented
+     */
+    combination_id?: string;
     /**
      * the airline code
      */
@@ -176,11 +180,11 @@ export interface SearchFlight extends Flight {
      */
     flyTo: string;
     guarantee: boolean;
-    last_seen: string;
+    // last_seen: string;
     operating_carrier: string;
     /**
      * time fo last refresh in iso timestamp
      */
-    refresh_timestamp: string | Date;
+    // refresh_timestamp: string | Date;
     vehicle_type: VehicleType;
 }
