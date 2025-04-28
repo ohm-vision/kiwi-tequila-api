@@ -1,6 +1,6 @@
 {
   "name": "@ohm-vision/kiwi-tequila-api",
-  "version": "1.3.3",
+  "version": "1.4.0",
   "description": "Unofficial wrapper for Kiwi (tequila) API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,7 +21,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^1.9.0"
   },
   "devDependencies": {
     "@types/node": "^18.7.6",
